@@ -12,10 +12,12 @@ int main()
 		scanf("%d",&array[i]);
 	}
 	for(i=0;i<n;i++)
-	{
+	{    if(array[i]%2!=0)
+	     {
 		sum=sum+array[i];
+		}
 	}
-	printf("The sum of %d numbers= %d",n,sum);
+	printf("The sum of odd numbers= %d",sum);
 	
 	return 0;
 }
